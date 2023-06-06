@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro de agenda</h1>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 10%;
+        }
+        h1{
+            text-align: center;
+            font-family: monospace;
+        }
+        form{
+            width: 500px;
+            margin: 0 auto;
+        }
+        div{
+            margin: 10px 0;
+        }
+        label{
+            display: inline-block;
+            width: 150px;
+        }
+        input{
+            width: 300px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type=submit]{
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            background-color: #444;
+        }
+       
+    </style>
+    <form action="cadastraragenda.php" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+        <div>
+            <label for="apelido">Apelido</label>
+            <input type="text" name="apelido" id="apelido">
+        </div>
+        <div>
+            <label for="endereco">Endereço</label>
+            <input type="text" name="endereco" id="endereco">
+        </div>
+        <div>
+            <label for="bairro">Bairro</label>
+            <input type="text" name="bairro" id="bairro">
+        </div>
+        <div>
+            <label for="cidade">Cidade</label>
+            <input type="text" name="cidade" id="cidade">
+        </div>
+        <div>
+            <label for="estado">Estado</label>
+            <input type="text" name="estado" id="estado">
+        </div>
+        <div>
+            <label for="telefone">Telefone</label>
+            <input type="text" name="telefone" id="telefone"
+            placeholder="Formato (18)9999-9999">
+        </div>
+        <div>
+            <label for="celular">Celular</label>
+            <input type="text" name="celular" id="celular"
+            placeholder="Formato (18)9999-9999">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+        </div>
+        <input type="submit" value="Salvar">
+
+        <a href="index.php">Voltar</a>
+    </form>
+</body>
+</html>
